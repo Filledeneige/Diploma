@@ -10,14 +10,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poison</title>
+	  <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!----START шапка с адресом---->	
-        <header>
-            <div class="name">
-                <h1>Poison</h1>
-            </div>
+	<div class="container">
+        <header class="header" >
+            <a class="name" href="#">
+                Poison
+            </a>
 					<div class="top-right">
               <img class="ico" width="37px" src="./svg/tel.svg" alt="Poison"/>
 						<a href="tel:8-926-358-21-46" class="adress-txt">8-926-358-21-46</a>
@@ -34,14 +36,11 @@
 <!----END шапка с адресом---->	
 	
 	<!----START соц---->	
-	<div class="side">
-		<div class="line" ></div>
-		<div class="line_ico"><a href="#" class="inst"><img src="imges/Vk.png" width="43"></a></div>
-		<div class="line_ico"><a href="#" class="fb"><img src="imges/Fb.png" width="43"></a></div>
-		<div class="line_ico"><a href="#" class="vk"><img src="imges/Inst.png" width="43"></a></div>
-		<div class="line"></div>
-
-		</div>
+	<ul class="side">
+		<li class="vk"><a href="#"></a></li>
+		<li class="fb"><a href="#"></a></li>
+		<li class="inst"><a href="#"></a></li>
+	</ul>
 <!----END соц---->	
 
 
@@ -69,7 +68,7 @@
         </main>
 	<!----END top-gr---->	
 	
- <!----START условия---->	
+ <!----START услвоия---->	
             <section class="features-of-quest">
                 <div class="features-of">
                     <img width="130" src="./imges/14_01.png" class="features__png" alt="14+">
@@ -88,18 +87,18 @@
                     <h3 class="features__name">Максимальное количество участников</h3>
                 </div>
             </section>
-<!----END условия---->	
+<!----END услвоия---->	
 	
 <!----START описание---->
         <article class="about">
-            <h2 class="descriptoin">Описание</h2>
+            <h2>Описание</h2>
             <p>
                 Сладости могут быть смертельно опасны, особенно если их приготовила ведьма.
 Это сродни жуткой сказке братьев Гримм о&#160;пряничном домике, но, увы, это жестокая реальность.
 Я знаю, где она обитает и&#160;ее слабые места, мне всего лишь нужна пара-тройка рук, чтобы покончить с&#160;ней...
             </p>
             <p>   </p>
-            <h2 class="features">Особенности</h2>
+            <h2>Особенности</h2>
             <ul>
                <li>двухуровневая локация более 250&#160;м² с&#160;чистыми и&#160;безопасными переходами;</li>
                <li>нелинейный сюжет;</li>
@@ -111,7 +110,7 @@
     
 					
 					<div class="photo">
-            <h2 class="frames">Кадры из&#160;квеста</h2>
+            <h2>Кадры из&#160;квеста</h2>
             <section class="section__photo">
 							
                 <div class="frame">
@@ -223,7 +222,7 @@
             </label>
             <button class="button1">Подписаться</button>
             <div class="subscription-text">
-                <div>Подпишись и получи <span class="red-txt"> скидку 5%</span> на&#160;первое прохождение!</div>
+                <span>Подпишись и получи <span class="red-txt"> скидку 5%</span> на&#160;первое прохождение!</span>
             </div>
         	</form>
 					<div class="footer-adr">
@@ -250,11 +249,11 @@
           <button class="button1">Подписаться</button>
         	</form>
 				
-					<div class="soc_mob">
-						<div class="soc_mob_ico"><a href="#" class="inst"><img src="imges/Vk.png" width="43"></a></div>
-						<div class="soc_mob_ico"><a href="#" class="fb"><img src="imges/Fb.png" width="43"></a></div>
-						<div class="soc_mob_ico"><a href="#" class="vk"><img src="imges/Inst.png" width="43"></a></div>
-					</div>
+					<ul class="soc_mob">
+						<li class="inst"><a href="#"> </a></li>
+						<li class="fb"><a href="#"></a></li>
+						<li class="vk"><a href="#"></a></li>
+					</ul>
 				
 						<div class="footer-txt-mob-tel"><a href="tel:8-926-358-21-46" >8 926-358-21-46</a> </div>
 
@@ -363,6 +362,6 @@
 
   </script>
 	
-	
+</div>	
 </body>
 </html>
