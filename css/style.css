@@ -26,8 +26,16 @@ html {
 
 p {
 	font-size: 16px;
+	color: #FFFDFD;
+	font-weight: normal;
 }
-body {
+
+section {
+	display: flex;
+	flex-direction: row;
+  }
+
+.container {
 	display: block;
 	margin: auto;
 	background-color: #000000;
@@ -41,30 +49,58 @@ body {
 
 /*! соцсети сбоку - десктоп - начало */
 
-.line {
-	height: 100px;
+.side:after {
+	height: calc(50% - 80px);
 	width: 1px;
 	background-color: red;
-	padding: 20px 0px 20px 0px;
+	margin: 5px;
+	content: " ";
+}
+.side:before {
+	height: calc(50% - 80px);
+	width: 1px;
+	background-color: red;
+	margin: 5px;
+	content: " ";
 }
 .side {
 	display: flex;
 	flex-wrap: wrap;
-	width: 30px;
+	width: 53px;
 	position: fixed;
 	justify-content: center;
 	vertical-align: middle;
-	top: 80px;
+	top: 50px;
 	right: 10px;
-	_margin-right: 5px;
+	margin-right: 10px;
+	height: 100%;
+	list-style: none;
 }
-.line_ico {
-	padding: 5px;
+.fb {
+	height: 43px;
+	width: 43px;
+	background-image: url("../imges/fb.png");
+	background-position: center;
+	margin: 5px;
+}
+.vk {
+	height: 43px;
+	width: 43px;
+	background-image: url("../imges/Vk.png");
+	background-position: center;
+	margin: 5px;
+}
+.inst {
+	height: 43px;
+	width: 43px;
+	background-image: url("../imges/inst.png");
+	background-position: center;
+	margin: 5px;
 }
 /*! соцсети сбоку - десктоп - конец */
 
 
-header{
+.header{
 	display:flex;
 	flex-wrap: wrap;
 	background-color: rgba(0, 0, 0, 0.6);
@@ -76,27 +112,30 @@ header{
 	height: 70px;
 	box-sizing: border-box;
 	align-items: center;
+	justify-content: space-between;
 }
+
 .name{
 	display: inline-block;
-	left: 0px;
+	font-family: 'UnifrakturMaguntia'; 
+	font-size: 60px;
 }
 
 a {
 	text-decoration: none;
 	color: white;
 }
+
 .top-right{
 	display: flex;
-	right: 10px;
 	align-items: center;
-	margin-left: auto;
-  margin-right: 0;
 }
+
 .ico{
 	display: inline-flex;
 	margin-right: 8px;
 }
+
 .adress-txt{
 	display: inline-flex;
 	justify-content: center;
@@ -120,13 +159,6 @@ a {
 
 .red-txt {
 	color: red;
-}
-
-h1 {
-	font-family: 'UnifrakturMaguntia'; 
-	font-size: 55px;
-	line-height: 0px;
-	padding-top: 9px;
 }
 
 
@@ -164,12 +196,13 @@ h1 {
 }
 
 .card-img-container{
-	width: calc (100%-280px);
+	width: calc(100% - 280px);
 	height:  auto;
 	display: flex;
 	flex-wrap: wrap;
 	color: white;
 	justify-content: space-between;
+	padding-top: 30px;
 }
 
 img.card-img {
@@ -183,20 +216,18 @@ img.card-img {
 	text-transform: uppercase;
 	color: white;
 	border: 0px;
-	padding: 10px;
-	_width: 170px;
+	padding: 10px 15px 10px 15px;
 	height: 40px;
 	border-radius: 9px;
 	font-weight: bold;
+	font-size: 14px;
 	margin-right: 15px;
 	margin-left: 15px;
 }
 
-
 .button1:hover {
 	background-color: #7d03d2;
 	transition: all 2s ease;
-	_width: 170px;
 	height: 40px;
 }
 
@@ -205,7 +236,6 @@ h3{
 	font-weight: 400;
 	font-size: 16px;
 }
-
 
 .features-of-quest {
 	background-color: rgba(233, 20, 20, 0.13);
@@ -217,10 +247,6 @@ h3{
 	width: 25%;
 	text-align: center;
 	padding: 20px;
-}
-
-header, main, section, article {
-	color: #FFFDFD;
 }
 
 .about {
@@ -240,10 +266,6 @@ h2 {
 	margin-top: 40px;
 }
 
-header {
-  display: flex;
-  justify-content: flex-start;
-}
 
 .frame {
 	display: flex;
@@ -297,10 +319,7 @@ img.photo__preview{
 .autor {
 	color: #848484;
 }
-section {
-	display: flex;
-	flex-direction: row;
-  }
+
 
 .field {
 	height: 40px;
@@ -333,10 +352,9 @@ input::-webkit-input-placeholder {
 .subscription{
 	display: flex;
 	color: white;
-	margin-top: 30px;
-	margin-bottom: 0px;
+	_margin-top: 30px;
+	_margin-bottom: 0px;
 	height: 50px;
-
 }
 
 .c{
@@ -361,6 +379,7 @@ input::-webkit-input-placeholder {
 	
 	h2 {
 		justify-content: center;
+		text-align: center;
 	}
 	
 .name{
@@ -423,6 +442,7 @@ input::-webkit-input-placeholder {
 		flex-wrap: wrap;
 		justify-content: space-around;
 		margin-top: 40px;
+		list-style: none;
 	}
 }
 
